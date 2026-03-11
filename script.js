@@ -15,7 +15,7 @@ document.querySelector(".message-btn").addEventListener("click", function(){
 
 // TYPED EFFECT
 var typed = new Typed('#typed', {
-  strings: ["Frontend Developer 💻", "UI/UX Designer 🎨", "3D Web Specialist 🌐"],
+  strings: ["Frontend Developer 💻", "UI/UX Designer 🎨", "Web Specialist 🌐"],
   typeSpeed: 80,
   backSpeed: 50,
   loop: true
