@@ -1,144 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chibueze Ogbonnaya | Portfolio</title>
+
+<title>Chibueze Ogbonnaya | Developer Portfolio</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="bg-gray-900 text-white font-sans">
+<body id="body" class="dark">
+
+<!-- floating background -->
+<div class="floating-bg"></div>
+
+<!-- NAVBAR -->
+
+<nav class="nav">
+
+<h1 class="logo">Chibueze</h1>
+
+<div>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+<button onclick="toggleTheme()" class="theme-btn">
+Toggle Theme
+</button>
+
+</div>
+
+</nav>
 
 <!-- HERO -->
-<section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
 
-<img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400"
-class="w-32 h-32 rounded-full mb-6">
+<section class="hero">
 
-<h1 class="text-5xl font-bold mb-4">
+<img src="https://i.imgur.com/8Km9tLL.png" class="avatar">
+
+<h1>
 Chibueze Ogbonnaya
 </h1>
 
-<p class="text-xl mb-4">
-Full Stack Developer • Problem Solver
-</p>
+<h2>
+<span id="typing"></span>
+</h2>
 
-<p class="italic text-yellow-400 mb-6">
+<p class="quote">
 “Every line of code is a step toward mastery.”
 </p>
-
-<a href="#projects" class="bg-blue-600 px-6 py-3 rounded">
-View Projects
-</a>
 
 </section>
 
 <!-- ABOUT -->
-<section class="p-10 text-center max-w-3xl mx-auto">
 
-<h2 class="text-3xl font-bold mb-6">
-About Me
-</h2>
+<section id="about" class="section">
+
+<h2>About Me</h2>
 
 <p>
-I'm Chibueze, a passionate developer who builds modern web experiences.
-I love solving problems and creating tools that make life easier.
+I'm a passionate developer who builds modern web applications
+and solves real world problems using technology.
 </p>
 
 </section>
 
 <!-- SKILLS -->
-<section class="bg-gray-800 p-10">
 
-<h2 class="text-3xl text-center font-bold mb-8">
-Skills
-</h2>
+<section id="skills" class="section">
 
-<div class="grid md:grid-cols-3 gap-6 text-center">
+<h2>Skills</h2>
 
-<div>
-<h3 class="font-bold mb-2">Frontend</h3>
+<div class="skill-box">
+
 <p>HTML</p>
+<div class="bar"><span class="html"></span></div>
+
 <p>CSS</p>
+<div class="bar"><span class="css"></span></div>
+
 <p>JavaScript</p>
-</div>
-
-<div>
-<h3 class="font-bold mb-2">Backend</h3>
-<p>Node.js</p>
-<p>Python</p>
-<p>APIs</p>
-</div>
-
-<div>
-<h3 class="font-bold mb-2">Tools</h3>
-<p>Git</p>
-<p>GitHub</p>
-<p>Figma</p>
-</div>
+<div class="bar"><span class="js"></span></div>
 
 </div>
 
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="p-10">
 
-<h2 class="text-3xl text-center font-bold mb-10">
-Projects
-</h2>
+<section id="projects" class="section">
 
-<div class="grid md:grid-cols-3 gap-8">
+<h2>Projects</h2>
 
-<!-- STREAMX -->
-<div class="bg-gray-800 p-6 rounded">
+<div class="projects">
 
-<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=600"
-class="rounded mb-4">
+<div class="project">
 
-<h3 class="text-xl font-bold">
-StreamX
-</h3>
+<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4">
 
-<p class="mb-2">
-Movie streaming web project.
-</p>
+<h3>StreamX</h3>
 
-<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/"
-class="text-blue-400">
-Live Site
+<p>Movie streaming platform</p>
+
+<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/">
+Visit Project
 </a>
 
 </div>
 
-<!-- PROJECT -->
-<div class="bg-gray-800 p-6 rounded">
+<div class="project">
 
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
-class="rounded mb-4">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
 
-<h3 class="text-xl font-bold">
-Farm Inventory System
-</h3>
+<h3>Farm Inventory</h3>
 
-<p>Farm management software project.</p>
+<p>Farm management system</p>
 
 </div>
 
-<!-- PROJECT -->
-<div class="bg-gray-800 p-6 rounded">
+<div class="project">
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
-class="rounded mb-4">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 
-<h3 class="text-xl font-bold">
-Portfolio Website
-</h3>
+<h3>Developer Portfolio</h3>
 
-<p>Personal developer portfolio.</p>
+<p>My personal portfolio</p>
 
 </div>
 
@@ -147,37 +141,30 @@ Portfolio Website
 </section>
 
 <!-- CONTACT -->
-<section class="bg-gray-800 p-10 text-center">
 
-<h2 class="text-3xl font-bold mb-6">
-Contact
-</h2>
+<section id="contact" class="section">
 
-<p class="mb-4">
-Let's build something amazing together.
-</p>
+<h2>Contact</h2>
 
-<div class="space-x-6">
+<div class="links">
 
-<a href="https://twitter.com/Chibueze689091" class="text-blue-400">
-Twitter
-</a>
+<a href="https://twitter.com/Chibueze689091">Twitter</a>
 
-<a href="https://github.com/ogbonnayachibueze15-alt" class="text-green-400">
-GitHub
-</a>
+<a href="https://github.com/ogbonnayachibueze15-alt">GitHub</a>
 
-<a href="https://wa.me/2349127495016" class="text-green-500">
-WhatsApp
-</a>
+<a href="https://wa.me/2349127495016">WhatsApp</a>
 
 </div>
 
 </section>
 
-<footer class="text-center p-6 bg-gray-900">
+<footer>
+
 © 2026 Chibueze Ogbonnaya
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
