@@ -1,121 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Chibueze Ogbonnaya | Portfolio</title>
 
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-
-<div class="stars"></div>
-
-<!-- NAVBAR -->
-
-<nav class="navbar">
-
-<h2 class="logo">⭐ CO Dev</h2>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
+<body class="bg-gray-900 text-white font-sans">
 
 <!-- HERO -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
 
-<section class="hero">
+<img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400"
+class="w-32 h-32 rounded-full mb-6">
 
-<img class="profile"
-src="https://images.unsplash.com/photo-1553484771-371a605b060b">
+<h1 class="text-5xl font-bold mb-4">
+Chibueze Ogbonnaya
+</h1>
 
-<h1>⭐ Chibueze Ogbonnaya</h1>
+<p class="text-xl mb-4">
+Full Stack Developer • Problem Solver
+</p>
 
-<p>Frontend Developer • UI Designer</p>
+<p class="italic text-yellow-400 mb-6">
+“Every line of code is a step toward mastery.”
+</p>
+
+<a href="#projects" class="bg-blue-600 px-6 py-3 rounded">
+View Projects
+</a>
 
 </section>
 
 <!-- ABOUT -->
+<section class="p-10 text-center max-w-3xl mx-auto">
 
-<section id="about">
-
-<h2 class="title">⭐ About Me</h2>
-
-<p class="about-text">
-
-I am a passionate frontend developer who enjoys building modern
-websites with beautiful design and interactive user experiences.
-
-</p>
-
-<div class="wisdom-card">
-
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+<h2 class="text-3xl font-bold mb-6">
+About Me
+</h2>
 
 <p>
-
-"Consistency beats talent when talent refuses to work."
-
+I'm Chibueze, a passionate developer who builds modern web experiences.
+I love solving problems and creating tools that make life easier.
 </p>
-
-</div>
 
 </section>
 
 <!-- SKILLS -->
+<section class="bg-gray-800 p-10">
 
-<section id="skills">
+<h2 class="text-3xl text-center font-bold mb-8">
+Skills
+</h2>
 
-<h2 class="title">⭐ My Skills</h2>
+<div class="grid md:grid-cols-3 gap-6 text-center">
 
-<div class="skills">
+<div>
+<h3 class="font-bold mb-2">Frontend</h3>
+<p>HTML</p>
+<p>CSS</p>
+<p>JavaScript</p>
+</div>
 
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Responsive Design</div>
-<div class="skill">UI / UX</div>
-<div class="skill">GitHub</div>
+<div>
+<h3 class="font-bold mb-2">Backend</h3>
+<p>Node.js</p>
+<p>Python</p>
+<p>APIs</p>
+</div>
+
+<div>
+<h3 class="font-bold mb-2">Tools</h3>
+<p>Git</p>
+<p>GitHub</p>
+<p>Figma</p>
+</div>
 
 </div>
 
 </section>
 
 <!-- PROJECTS -->
+<section id="projects" class="p-10">
 
-<section id="projects">
+<h2 class="text-3xl text-center font-bold mb-10">
+Projects
+</h2>
 
-<h2 class="title">⭐ My Projects</h2>
+<div class="grid md:grid-cols-3 gap-8">
 
-<div class="projects">
+<!-- STREAMX -->
+<div class="bg-gray-800 p-6 rounded">
 
-<div class="project">
+<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=600"
+class="rounded mb-4">
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3 class="text-xl font-bold">
+StreamX
+</h3>
 
-<h3>StreamX</h3>
+<p class="mb-2">
+Movie streaming web project.
+</p>
 
-<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/" target="_blank">View</a>
+<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/"
+class="text-blue-400">
+Live Site
+</a>
 
 </div>
 
+<!-- PROJECT -->
+<div class="bg-gray-800 p-6 rounded">
 
-<div class="project">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+class="rounded mb-4">
 
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+<h3 class="text-xl font-bold">
+Farm Inventory System
+</h3>
 
-<h3>Portfolio Website</h3>
+<p>Farm management software project.</p>
 
-<a href="#">View</a>
+</div>
+
+<!-- PROJECT -->
+<div class="bg-gray-800 p-6 rounded">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+class="rounded mb-4">
+
+<h3 class="text-xl font-bold">
+Portfolio Website
+</h3>
+
+<p>Personal developer portfolio.</p>
 
 </div>
 
@@ -124,31 +147,37 @@ websites with beautiful design and interactive user experiences.
 </section>
 
 <!-- CONTACT -->
+<section class="bg-gray-800 p-10 text-center">
 
-<section id="contact">
+<h2 class="text-3xl font-bold mb-6">
+Contact
+</h2>
 
-<h2 class="title">⭐ Get In Touch</h2>
+<p class="mb-4">
+Let's build something amazing together.
+</p>
 
-<div class="contact">
+<div class="space-x-6">
 
-<a href="https://wa.me/09127495016">WhatsApp</a>
+<a href="https://twitter.com/Chibueze689091" class="text-blue-400">
+Twitter
+</a>
 
-<a href="https://x.com/@Chibueze689091">X</a>
+<a href="https://github.com/ogbonnayachibueze15-alt" class="text-green-400">
+GitHub
+</a>
 
-<a href="https://instagram.com/@chibenz44">Instagram</a>
-
-<a href="mailto:ogbonnayachibueze0@gmail.com">Email</a>
+<a href="https://wa.me/2349127495016" class="text-green-500">
+WhatsApp
+</a>
 
 </div>
 
 </section>
 
-<footer>
-
-<p>© 2026 Chibueze Ogbonnaya</p>
-
+<footer class="text-center p-6 bg-gray-900">
+© 2026 Chibueze Ogbonnaya
 </footer>
 
 </body>
-
 </html>
