@@ -21,6 +21,8 @@ height:100%;
 z-index:-1;
 }
 
+/* TERMINAL */
+
 #terminal{
 position:fixed;
 width:100%;
@@ -34,11 +36,28 @@ font-family:monospace;
 z-index:999;
 }
 
+/* NAV */
+
 .nav{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px;
+flex-wrap:wrap;
 }
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
 
 .hero{
 padding:100px 20px;
@@ -56,15 +75,17 @@ margin:auto;
 .avatar{
 width:180px;
 height:180px;
-object-fit:cover;
 border-radius:50%;
+object-fit:cover;
 border:4px solid #3b82f6;
 }
 
 #globe-container{
-width:420px;
-height:420px;
+width:400px;
+height:400px;
 }
+
+/* SECTIONS */
 
 .section{
 padding:80px 20px;
@@ -72,6 +93,8 @@ text-align:center;
 max-width:900px;
 margin:auto;
 }
+
+/* PROJECTS */
 
 .projects{
 display:grid;
@@ -95,6 +118,8 @@ width:100%;
 border-radius:10px;
 }
 
+/* SKILLS */
+
 .bar{
 background:#334155;
 height:10px;
@@ -113,7 +138,56 @@ border-radius:10px;
 .css{width:85%}
 .js{width:75%}
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:20px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+#globe-container{
+margin:auto;
+width:300px;
+height:300px;
+}
+
+}
+
+/* PHONE */
+
+@media(max-width:600px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+width:100%;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.avatar{
+width:140px;
+height:140px;
+}
+
+#globe-container{
+width:250px;
+height:250px;
+}
+
 }

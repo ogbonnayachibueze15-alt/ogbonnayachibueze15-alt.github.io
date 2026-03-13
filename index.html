@@ -6,13 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chibueze Ogbonnaya | Developer</title>
+<title>Chibueze Ogbonnaya | Developer Portfolio</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-<!-- ThreeJS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <link rel="stylesheet" href="style.css">
@@ -21,13 +19,13 @@
 
 <body id="body" class="dark">
 
-<!-- TERMINAL -->
+<!-- TERMINAL INTRO -->
 
 <div id="terminal">
 <pre id="terminal-text"></pre>
 </div>
 
-<!-- BACKGROUND -->
+<!-- PARTICLES BACKGROUND -->
 
 <div id="particles-js"></div>
 
@@ -37,14 +35,16 @@
 
 <h1 class="logo">Chibueze</h1>
 
-<div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<div class="nav-links" id="navLinks">
 
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 
-<button onclick="toggleTheme()">Toggle Theme</button>
+<button onclick="toggleTheme()">Theme</button>
 
 </div>
 
@@ -58,12 +58,9 @@
 
 <div>
 
-<!-- PROFILE PHOTO (CAR) -->
-
 <img
 src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-class="avatar"
->
+class="avatar">
 
 <h1>Chibueze Ogbonnaya</h1>
 
@@ -74,8 +71,6 @@ class="avatar"
 </p>
 
 </div>
-
-<!-- 3D TECH GLOBE -->
 
 <div id="globe-container"></div>
 
@@ -90,8 +85,8 @@ class="avatar"
 <h2>About Me</h2>
 
 <p>
-I am a passionate web developer who builds modern web applications
-and creative digital experiences using HTML, CSS and JavaScript.
+I am a passionate web developer who enjoys building modern
+web applications and creative digital experiences.
 </p>
 
 </section>
@@ -155,7 +150,7 @@ Visit Project
 
 <h3>AI Chat Web App</h3>
 
-<p>AI powered assistant web app</p>
+<p>Future project</p>
 
 <a href="#">Coming Soon</a>
 
@@ -177,9 +172,9 @@ Visit Project
 
 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 
-<h3>CodeSnippet Manager</h3>
+<h3>Code Snippet Manager</h3>
 
-<p>Save and organize useful code snippets</p>
+<p>Save useful coding snippets</p>
 
 <a href="#">Coming Soon</a>
 

@@ -1,3 +1,5 @@
+// typing animation
+
 var typed = new Typed("#typing",{
 strings:[
 "Full Stack Developer",
@@ -9,6 +11,8 @@ typeSpeed:60,
 backSpeed:40,
 loop:true
 });
+
+// theme
 
 function toggleTheme(){
 
@@ -24,6 +28,18 @@ body.classList.add("dark");
 
 }
 
+// mobile menu
+
+function toggleMenu(){
+
+const nav=document.getElementById("navLinks");
+
+nav.classList.toggle("active");
+
+}
+
+// particles
+
 particlesJS("particles-js",{
 particles:{
 number:{value:80},
@@ -33,6 +49,8 @@ line_linked:{enable:true},
 color:{value:"#3b82f6"}
 }
 });
+
+// terminal intro
 
 const text=[
 "Booting System...",
@@ -66,20 +84,20 @@ document.getElementById("terminal").style.display="none";
 
 typeLine();
 
-/* 3D TECH GLOBE */
+/* 3D GLOBE */
 
 const scene=new THREE.Scene();
 
 const camera=new THREE.PerspectiveCamera(
 75,
-420/420,
+400/400,
 0.1,
 1000
 );
 
 const renderer=new THREE.WebGLRenderer({alpha:true});
 
-renderer.setSize(420,420);
+renderer.setSize(400,400);
 
 document
 .getElementById("globe-container")
