@@ -2,13 +2,18 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chibueze Ogbonnaya | Developer Portfolio</title>
+<title>Chibueze Ogbonnaya | Developer</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<!-- ThreeJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,8 +21,15 @@
 
 <body id="body" class="dark">
 
-<!-- floating background -->
-<div class="floating-bg"></div>
+<!-- TERMINAL -->
+
+<div id="terminal">
+<pre id="terminal-text"></pre>
+</div>
+
+<!-- BACKGROUND -->
+
+<div id="particles-js"></div>
 
 <!-- NAVBAR -->
 
@@ -32,9 +44,7 @@
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 
-<button onclick="toggleTheme()" class="theme-btn">
-Toggle Theme
-</button>
+<button onclick="toggleTheme()">Toggle Theme</button>
 
 </div>
 
@@ -44,19 +54,32 @@ Toggle Theme
 
 <section class="hero">
 
-<img src="https://i.imgur.com/8Km9tLL.png" class="avatar">
+<div class="hero-grid">
 
-<h1>
-Chibueze Ogbonnaya
-</h1>
+<div>
 
-<h2>
-<span id="typing"></span>
-</h2>
+<!-- PROFILE PHOTO (CAR) -->
+
+<img
+src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+class="avatar"
+>
+
+<h1>Chibueze Ogbonnaya</h1>
+
+<h2><span id="typing"></span></h2>
 
 <p class="quote">
 “Every line of code is a step toward mastery.”
 </p>
+
+</div>
+
+<!-- 3D TECH GLOBE -->
+
+<div id="globe-container"></div>
+
+</div>
 
 </section>
 
@@ -67,8 +90,8 @@ Chibueze Ogbonnaya
 <h2>About Me</h2>
 
 <p>
-I'm a passionate developer who builds modern web applications
-and solves real world problems using technology.
+I am a passionate web developer who builds modern web applications
+and creative digital experiences using HTML, CSS and JavaScript.
 </p>
 
 </section>
@@ -79,8 +102,6 @@ and solves real world problems using technology.
 
 <h2>Skills</h2>
 
-<div class="skill-box">
-
 <p>HTML</p>
 <div class="bar"><span class="html"></span></div>
 
@@ -89,8 +110,6 @@ and solves real world problems using technology.
 
 <p>JavaScript</p>
 <div class="bar"><span class="js"></span></div>
-
-</div>
 
 </section>
 
@@ -110,7 +129,21 @@ and solves real world problems using technology.
 
 <p>Movie streaming platform</p>
 
-<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/">
+<a href="https://ogbonnayachibueze15-alt.github.io/stream-x/" target="_blank">
+Visit Project
+</a>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+
+<h3>Mental Health Hub</h3>
+
+<p>Mental health awareness platform</p>
+
+<a href="https://ogbonnayachibueze15-alt.github.io/Mental-Health-Hub/" target="_blank">
 Visit Project
 </a>
 
@@ -120,9 +153,23 @@ Visit Project
 
 <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
 
-<h3>Farm Inventory</h3>
+<h3>AI Chat Web App</h3>
 
-<p>Farm management system</p>
+<p>AI powered assistant web app</p>
+
+<a href="#">Coming Soon</a>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+
+<h3>DevConnect</h3>
+
+<p>Developer social network</p>
+
+<a href="#">Coming Soon</a>
 
 </div>
 
@@ -130,9 +177,11 @@ Visit Project
 
 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 
-<h3>Developer Portfolio</h3>
+<h3>CodeSnippet Manager</h3>
 
-<p>My personal portfolio</p>
+<p>Save and organize useful code snippets</p>
+
+<a href="#">Coming Soon</a>
 
 </div>
 
@@ -146,15 +195,11 @@ Visit Project
 
 <h2>Contact</h2>
 
-<div class="links">
-
 <a href="https://twitter.com/Chibueze689091">Twitter</a>
 
 <a href="https://github.com/ogbonnayachibueze15-alt">GitHub</a>
 
 <a href="https://wa.me/2349127495016">WhatsApp</a>
-
-</div>
 
 </section>
 
